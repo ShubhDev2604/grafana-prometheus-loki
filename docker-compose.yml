@@ -1,0 +1,16 @@
+services:
+  prom-server:
+    image: prom/prometheus
+    container_name: prom-server
+    ports:
+      - 9090:9090
+    volumes:
+          - ./prometheus-config.yml:/etc/prometheus/prometheus.yml
+    depends_on:
+      - app
+
+  app:
+    build: .
+    container_name: spring-demo-app
+    ports:
+      - "8080:8080"
