@@ -14,3 +14,11 @@ services:
     container_name: spring-demo-app
     ports:
       - "8080:8080"
+
+  grafana:
+    image: grafana/grafana:9.5.15
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prom-server
