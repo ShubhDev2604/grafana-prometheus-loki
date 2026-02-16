@@ -147,16 +147,21 @@ Screenshots for this project live in:
 
 If you are viewing this on GitHub and the images have been committed, you should see them rendered below.
 
-Example embedding (update filenames if yours differ):
+Current screenshots (filenames can be adjusted as needed):
 
-```markdown
 ![Grafana Prometheus Dashboard](docs/screenshots/grafana-prometheus-dashboard.png)
-![Grafana Prometheus Custom Timer Metric Gauge](docs/screenshots/grafana-prometheus-custom-timer-metric-gauge.png)
-![Grafana Prometheus Log Events Graph](docs/screenshots/grafana-prometheus-log-events-graph.png)
-![Grafana Promtail Loki Logs Fetched](docs/screenshots/grafana-promtail-loki-logs-fetched.png)
-```
+Grafana dashboard showing Prometheus metrics from the Spring Boot app (including custom slow API metrics).
 
-You can add more screenshots to `docs/screenshots/` and reference them the same way.
+![Grafana Prometheus Custom Timer Metric Gauge](docs/screenshots/grafana-prometheus-custom-timer-metric-gauge.png)
+Panel highlighting the custom Micrometer timer/gauge for the `/slow` endpoint latency.
+
+![Grafana Prometheus Log Events Graph](docs/screenshots/grafana-prometheus-log-events-graph.png)
+Time-series view of log-related events visualized from Prometheus data.
+
+![Grafana Promtail Loki Logs Fetched](docs/screenshots/grafana-promtail-loki-logs-fetched.png)
+Loki/Promtail view confirming that application logs from the Docker containers are being collected successfully.
+
+You can add more screenshots to `docs/screenshots/` and reference them with the same `![alt text](docs/screenshots/your-file.png)` pattern.
 
 ---
 
